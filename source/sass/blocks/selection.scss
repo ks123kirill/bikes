@@ -1,0 +1,46 @@
+.selection {
+  min-height: 825px;
+  background-image: url('../img/promo-bike.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 260px;
+}
+
+.selection > div {
+  max-width: 880px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media (min-resolution: 2dppx) {
+  .selection {
+    background-image: url('../img/promo-bike@2x.jpg');
+  }
+}
+
+@media (max-width: $desktop-width - 1px) {
+  .selection {
+    min-height: initial;
+    height: 340px;
+    padding-top: 139px;
+  }
+
+  .selection > div {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .selection {
+    height: 390px;
+    padding-top: 122px;
+  }
+
+  .selection > div {
+    padding: 0 15px;
+  }
+}
+/////////////
