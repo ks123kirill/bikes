@@ -28,6 +28,12 @@
   border-radius: 6px;
   border: 1px solid var(--special-grey-lighten);
   padding-top: 6px;
+  padding-left: 27px;
+
+  &:hover::placeholder,
+  &:focus::placeholder {
+    opacity: 1;
+  }
 }
 
 .form input::placeholder {
@@ -37,7 +43,6 @@
   line-height: 24px;
   color: var(--basic-black-lighten);
   opacity: 0.5;
-  padding-left: 27px;
 }
 
 .form button {
