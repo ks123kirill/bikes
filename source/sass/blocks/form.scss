@@ -64,10 +64,6 @@
     color: var(--basic-black);
     margin: 0 0 29px 0;
   }
-
-  .form input::placeholder {
-    padding-left: 20px;
-  }
 }
 
 @media (max-width: $tablet-width - 1px) {
