@@ -5,7 +5,7 @@
 }
 
 .main-footer h2 {
-  @include text-title();
+  @include text-title-l();
   max-width: 555px;
   padding-bottom: 44px;
   margin: 0 auto;
