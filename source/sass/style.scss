@@ -5,7 +5,6 @@
 
 // blocks
 @import "blocks/visually-hidden.scss";
-@import "blocks/wrapper.scss";
 @import "blocks/page-body.scss";
 @import "blocks/button.scss";
 @import "blocks/main-header.scss";
@@ -16,5 +15,6 @@
 @import "blocks/form.scss";
 @import "blocks/advantages.scss";
 @import "blocks/catalog.scss";
+@import "blocks/video-block.scss";
 @import "blocks/main-footer.scss";
 // stylelint: Undefined rule no-invalid-position-at-import-rule Чего ему надо?

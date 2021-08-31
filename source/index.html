@@ -93,7 +93,7 @@
           <li class="catalog__item">
             <a href="#">
               <picture>
-                <!-- <source type="image/webp" srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x"> -->
+                <source type="image/webp" srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x">
                   <!-- 1х: 342px; 2x: 684px -->
                 <img src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg 2x" width="342" height="503" alt="Дорожный велосипед">
               </picture>
@@ -104,7 +104,7 @@
           <li class="catalog__item">
             <a href="#">
               <picture>
-                <!-- <source type="image/webp" srcset="img/mountain-bike.webp 1x, img/mountain-bike@2x.webp 2x"> -->
+                <source type="image/webp" srcset="img/mountain-bike.webp 1x, img/mountain-bike@2x.webp 2x">
                   <!-- 1х: 342px; 2x: 684px -->
                 <img src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg 2x" width="342" height="503" alt="Горный велосипед">
               </picture>
@@ -115,7 +115,7 @@
           <li class="catalog__item">
             <a href="#">
               <picture>
-                <!-- <source type="image/webp" srcset="img/child-bike.webp 1x, img/child-bike@2x.webp 2x"> -->
+                <source type="image/webp" srcset="img/child-bike.webp 1x, img/child-bike@2x.webp 2x">
                   <!-- 1х: 342px; 2x: 684px -->
                 <img src="img/child-bike.jpg" srcset="img/child-bike@2x.jpg 2x" width="342" height="503" alt="Детский велосипед">
               </picture>
@@ -125,20 +125,33 @@
         </ul>
       </section>
 
-      <section class="bike-videos"></section>
+      <section class="video-block">
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про<br> особенности выбора велосипеда для себя. </p>
+        <div>
+          <video width="929" height="522" poster="img/front-view-bike.jpg">
+            <!-- <source src="video.mp4" type="video/mp4">
+            <source src="video.ogv" type="video/ogg">
+            <source src="video.webm" type="video/webm"> -->
+          </video>
+          <button class="button" type="button">
+            <span class="visually-hidden">Смотреть видео</span>
+          </button>
+        </div>
+      </section>
     </main>
 
     <footer class="main-footer" id="contacts">
       <h2>Как нас найти?</h2>
-      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <p>Мы находимся по адресу: Санкт&#8239;Петербург, ул. Большая Конюшенная, д. 19</p>
       <picture>
-        <!-- <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x"> -->
+        <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
           <!-- 1х: 698px; 2x: 1396px -->
         <img src="img/map.jpg" srcset="img/map@2x.jpg 2x" width="957" height="530" alt="Карта">
       </picture>
       <div>
-        <a class="main-footer__link main-footer__link--email" type="email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-        <a class="main-footer__link main-footer__link--tel" type="tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
+        <a class="main-footer__link main-footer__link--email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+        <a class="main-footer__link main-footer__link--tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
       </div>
     </footer>
     <script src="js/script.js"></script>

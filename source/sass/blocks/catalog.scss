@@ -102,6 +102,7 @@
 @media (max-width: $desktop-width - 1px) {
   .catalog {
     padding-top: 50px;
+    padding-bottom: 20px;
   }
 
   .catalog h2 {
@@ -169,7 +170,7 @@
 
 @media (max-width: $tablet-width - 1px) {
   .catalog {
-    padding: 52px 25px 30px 25px;
+    padding: 52px 25px 12px 25px;
   }
 
   .catalog li {
