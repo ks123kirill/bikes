@@ -21,7 +21,6 @@
   margin: 0 auto;
 }
 
-
 .main-footer img {
   display: block;
   width: 957px;
@@ -94,7 +93,6 @@
   .main-footer {
     width: 100%;
     padding: 155px 35px 40px 35px;
-    margin-top: 300px; // 300px временное решение. форма выпадает из родителя
   }
 
   .main-footer h2 {
@@ -114,7 +112,7 @@
 
 @media (max-width: $tablet-width - 1px) {
   .main-footer {
-    padding: 155px 0 40px 0;
+    padding: 119px 0 40px 0;
   }
 
   .main-footer h2 {
@@ -126,11 +124,12 @@
   .main-footer p {
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 25px;
+    padding-bottom: 19px;
   }
 
   .main-footer img {
     height: 250px;
+    margin-bottom: 17px;
   }
 
   .main-footer__link {

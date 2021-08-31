@@ -1,0 +1,136 @@
+.video-block {
+  min-height: 706px;
+  background-color: var(--basic-black);
+  padding-top: 120px;
+}
+
+.video-block h2 {
+  @include text-title-l();
+  max-width: 930px;
+  color: var(--basic-white);
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.video-block p {
+  max-width: 930px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--basic-white);
+  opacity: 0.7;
+  padding-bottom: 56px;
+  margin: 0 auto;
+}
+
+.video-block div {
+  position: relative;
+  max-width: 929px;
+  margin: 0 auto;
+}
+
+.video-block video {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -135px;
+}
+
+.video-block button {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 232px;
+  left: 433px;
+  background-color: var(--basic-green);
+  border-radius: 50%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 18px;
+    top: 24px;
+    left: 28px;
+    background-image: url("../img/icon-triangle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (max-width: $desktop-width - 1px) {
+  .video-block {
+    min-height: 413px;
+    padding-top: 64px;
+  }
+
+  .video-block h2 {
+    font-size: 24px;
+  }
+
+  .video-block p {
+    max-width: 430px;
+    padding-bottom: 37px;
+  }
+
+  .video-block br {
+    display: none;
+  }
+
+  .video-block div {
+    max-width: 503px;
+    max-height: 282px;
+  }
+
+  .video-block video {
+    margin-bottom: -100px;
+  }
+
+  .video-block button {
+    width: 90px;
+    height: 90px;
+    top: 95px;
+    left: 207px;
+
+    &::before {
+      width: 18px;
+      height: 25px;
+      top: 33px;
+      left: 40px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .video-block {
+    min-height: 384px;
+    padding-top: 83px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .video-block div {
+    max-width: 288px;
+    max-height: 161px;
+  }
+
+  .video-block p {
+    padding-bottom: 55px;
+  }
+
+  .video-block button {
+    width: 65px;
+    height: 65px;
+    top: 47px;
+    left: 110px;
+
+    &::before {
+      width: 13px;
+      height: 18px;
+      top: 24px;
+      left: 30px;
+    }
+  }
+}
+
+//////
