@@ -1,5 +1,5 @@
 .main-header {
-  background-color: transparent;
+  background-color: var(--basic-black);
 }
 
 .main-header__wrapper {
@@ -11,7 +11,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--basic-white);
+  border-bottom: 1px solid var(--special-white);
   padding: 10px 20px 0 20px;
   margin: 0 auto;
 }
@@ -53,4 +53,3 @@
     padding-left: 17px;
   }
 }
-///////////

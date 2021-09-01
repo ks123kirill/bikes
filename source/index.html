@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Магазин велосипедов Moon</title>
-    <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font">
-    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font">
-    <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font">
-    <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font">
+    <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="img/promo-bike.jpg" as="image">
     <link rel="stylesheet" href="css/style.min.css">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
+
   <body class="page-body">
     <header class="main-header main-header--no-js">
       <div class="main-header__wrapper">
@@ -27,13 +34,13 @@
           </button>
           <ul>
             <li>
-              <a href="#">О нас</a>
+              <a href="#advantages">О нас</a>
             </li>
             <li>
-              <a href="#">Виды велосипедов</a>
+              <a href="#catalog">Виды велосипедов</a>
             </li>
             <li>
-              <a href="#">Видео про велосипеды</a>
+              <a href="#video-block">Видео про велосипеды</a>
             </li>
             <li>
               <a href="#contacts">Контакты</a>
@@ -54,10 +61,10 @@
           <form class="form" action="https://echo.htmlacademy.ru" method="POST">
             <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
             <label for="name">
-              <input type="text" id="name" name="name" placeholder="Введите Ваше Имя" required>
+              <input type="text" id="name" name="name" placeholder="Введите Ваше Имя" pattern="[A-Za-zА-Яа-яЁё\s]+$" required>
             </label>
             <label for="tel">
-              <input type="text" id="tel" name="tel" placeholder="Введите Ваш номер телефона" required>
+              <input type="text" id="tel" name="tel" placeholder="Введите Ваш номер телефона" pattern="^[0-9]+$" required>
             </label>
             <button class="button" type="submit">Подобрать велосипед мечты</button>
           </form>
@@ -65,7 +72,7 @@
 
       </section>
 
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <h2>Несколько фактов о нас</h2>
         <ul>
           <li>
@@ -87,7 +94,7 @@
         </ul>
       </section>
 
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <h2>Виды велосипедов</h2>
         <ul>
           <li class="catalog__item">
@@ -95,7 +102,7 @@
               <picture>
                 <source type="image/webp" srcset="img/road-bike.webp 1x, img/road-bike@2x.webp 2x">
                   <!-- 1х: 342px; 2x: 684px -->
-                <img src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg 2x" width="342" height="503" alt="Дорожный велосипед">
+                <img src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg 2x" width="342" height="503" loading="lazy" alt="Дорожный велосипед">
               </picture>
               <p>Дорожный велосипед</p>
             </a>
@@ -106,7 +113,7 @@
               <picture>
                 <source type="image/webp" srcset="img/mountain-bike.webp 1x, img/mountain-bike@2x.webp 2x">
                   <!-- 1х: 342px; 2x: 684px -->
-                <img src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg 2x" width="342" height="503" alt="Горный велосипед">
+                <img src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg 2x" width="342" height="503" loading="lazy" alt="Горный велосипед">
               </picture>
               <p>Горный велосипед</p>
             </a>
@@ -117,7 +124,7 @@
               <picture>
                 <source type="image/webp" srcset="img/child-bike.webp 1x, img/child-bike@2x.webp 2x">
                   <!-- 1х: 342px; 2x: 684px -->
-                <img src="img/child-bike.jpg" srcset="img/child-bike@2x.jpg 2x" width="342" height="503" alt="Детский велосипед">
+                <img src="img/child-bike.jpg" srcset="img/child-bike@2x.jpg 2x" width="342" height="503" loading="lazy" alt="Детский велосипед">
               </picture>
               <p>Детский велосипед</p>
             </a>
@@ -125,7 +132,7 @@
         </ul>
       </section>
 
-      <section class="video-block">
+      <section class="video-block" id="video-block">
         <h2>Видео про велосипеды</h2>
         <p>В этом видео мы подробно расскажем про<br> особенности выбора велосипеда для себя. </p>
         <div>
@@ -147,13 +154,13 @@
       <picture>
         <source type="image/webp" srcset="img/map.webp 1x, img/map@2x.webp 2x">
           <!-- 1х: 698px; 2x: 1396px -->
-        <img src="img/map.jpg" srcset="img/map@2x.jpg 2x" width="957" height="530" alt="Карта">
+        <img src="img/map.jpg" srcset="img/map@2x.jpg 2x" width="957" height="530" alt="Карта" loading="lazy">
       </picture>
       <div>
         <a class="main-footer__link main-footer__link--email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
         <a class="main-footer__link main-footer__link--tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>

@@ -90,6 +90,7 @@
   width: 342px;
   height: 503px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .catalog p {
@@ -102,7 +103,7 @@
 @media (max-width: $desktop-width - 1px) {
   .catalog {
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 17px;
   }
 
   .catalog h2 {
@@ -195,4 +196,3 @@
     margin: 0 auto 18px auto;
   }
 }
-//////

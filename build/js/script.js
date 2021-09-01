@@ -19,4 +19,21 @@ var mainNavJs = function () {
   });
 };
 
+var getSmoothLinks = function () {
+  var smoothLinks = document.querySelectorAll('a[href^="#"]');
+
+  smoothLinks.forEach(function (smoothLink) {
+    smoothLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      var id = smoothLink.getAttribute('href');
+
+      document.querySelector(id).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+};
+
 mainNavJs();
+getSmoothLinks();
