@@ -55,8 +55,11 @@
 
 @media (max-width: $desktop-width - 1px) {
   .form {
-    width: 324px;
-    padding-top: 152px;
+    width: 100%;
+    background-color: white;
+    padding-top: 69px;
+    padding-left: 220px;
+    padding-right: 220px;
     margin: 0 auto;
   }
 
@@ -70,18 +73,12 @@
 @media (max-width: $tablet-width - 1px) {
   .form {
     width: initial;
-    padding-top: 184px;
+    padding-top: 71px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .form p {
     margin-bottom: 20px;
   }
 }
-
-@media (max-width: 450px) {
-  .form {
-    padding-top: 139px;
-  }
-}
-
-////

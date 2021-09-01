@@ -24,9 +24,9 @@
 
 @media (max-width: $desktop-width - 1px) {
   .selection-block {
-    width: 435px;
+    width: initial;
     text-align: center;
-    padding-top: 0;
+    padding: 0 140px;
     margin: 0 auto;
   }
 
@@ -38,17 +38,21 @@
 
   .selection-block p {
     font-size: 18px;
+    padding-bottom: 82px;
   }
 }
 
 @media (max-width: $tablet-width - 1px) {
   .selection-block {
-    width: initial;
+    padding: 0 15px;
   }
 
   .selection-block h1 {
     line-height: 42px;
     padding-bottom: 18px;
   }
-}
 
+  .selection-block p {
+    padding-bottom: 69px;
+  }
+}

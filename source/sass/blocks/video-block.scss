@@ -39,7 +39,7 @@
   position: absolute;
   width: 65px;
   height: 65px;
-  top: 232px;
+  top: 229px;
   left: 433px;
   background-color: var(--basic-green);
   border-radius: 50%;
@@ -61,7 +61,7 @@
 @media (max-width: $desktop-width - 1px) {
   .video-block {
     min-height: 413px;
-    padding-top: 64px;
+    padding-top: 70px;
   }
 
   .video-block h2 {
@@ -70,7 +70,7 @@
 
   .video-block p {
     max-width: 430px;
-    padding-bottom: 37px;
+    padding-bottom: 39px;
   }
 
   .video-block br {
@@ -89,7 +89,7 @@
   .video-block button {
     width: 90px;
     height: 90px;
-    top: 95px;
+    top: 97px;
     left: 207px;
 
     &::before {
@@ -132,5 +132,3 @@
     }
   }
 }
-
-//////
