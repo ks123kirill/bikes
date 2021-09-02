@@ -1,5 +1,6 @@
 .main-header {
   background-color: var(--basic-black);
+  margin-bottom: -62px;
 }
 
 .main-header__wrapper {
@@ -23,6 +24,14 @@
 }
 
 @media (max-width: $desktop-width - 1px) {
+  .main-header {
+    margin-bottom: -50px;
+  }
+
+  .main-header--no-js {
+    margin-bottom: 0;
+  }
+
   .main-header__wrapper {
     max-width: initial;
     min-height: 50px;
@@ -30,9 +39,19 @@
     padding: 0 0 4px 23px;
   }
 
-  .main-header__wrapper > a {
+  .main-header--no-js .main-header__wrapper {
+    padding: 0;
+  }
+
+  .main-header__wrapper .main-header__logo {
     position: initial;
     align-self: flex-end;
+  }
+
+  .main-header--no-js .main-header__logo {
+    flex-basis: 100%;
+    order: 1;
+    padding-left: 20px;
   }
 
   .main-header__wrapper svg {

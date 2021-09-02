@@ -22,7 +22,7 @@
   <body class="page-body">
     <header class="main-header main-header--no-js">
       <div class="main-header__wrapper">
-        <a href="#">
+        <a class="main-header__logo">
           <svg width="68" height="21" role="img">
             <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
           </svg>
@@ -50,7 +50,7 @@
       </div>
     </header>
 
-    <main class="main">
+    <main>
       <section class="selection">
         <div>
           <div class="selection-block">
@@ -58,8 +58,8 @@
             <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
           </div>
 
-          <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-            <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <p class="selection__info">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
             <label for="name">
               <input type="text" id="name" name="name" placeholder="Введите Ваше Имя" pattern="[A-Za-zА-Яа-яЁё\s]+$" required="">
             </label>

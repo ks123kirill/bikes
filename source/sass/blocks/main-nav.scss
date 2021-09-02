@@ -44,7 +44,7 @@
 
 @media (max-width: $desktop-width - 1px) {
   .main-nav {
-    flex-grow: 0;
+    flex-grow: 1;
   }
 
   .main-nav__toggle {
@@ -103,7 +103,7 @@
   }
 
   .main-nav ul {
-    min-width: 320px;
+    width: 100%;
     min-height: 568px;
     padding-top: 101px;
     flex-direction: column;
@@ -115,6 +115,7 @@
   }
 
   .main-nav li {
+    width: 100%;
     text-align: left;
     background-color: var(--basic-grey);
     margin-right: 0;

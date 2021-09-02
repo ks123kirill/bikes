@@ -1,6 +1,6 @@
 .selection {
   min-height: 825px;
-  background-image: url('../img/promo-bike.jpg');
+  background-image: url("../img/promo-bike.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -17,8 +17,63 @@
 
 @media (min-resolution: 2dppx) {
   .selection {
-    background-image: url('../img/promo-bike@2x.jpg');
+    background-image: url("../img/promo-bike@2x.jpg");
   }
+}
+
+.selection form {
+  width: 327px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 64px;
+  margin: 0;
+}
+
+.selection__info {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  color: var(--basic-white);
+  margin: 0 0 18px 0;
+}
+
+.selection label,
+.selection button {
+  height: 49px;
+  border-radius: 6px;
+  margin: 0 0 20px 0;
+}
+
+.selection input {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--special-grey-lighten);
+  cursor: pointer;
+  padding-top: 6px;
+  padding-left: 27px;
+
+  &:hover::placeholder,
+  &:focus::placeholder {
+    opacity: 1;
+  }
+}
+
+.selection input::placeholder {
+  font-family: $font-family-basic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--basic-black-lighten);
+  opacity: 0.5;
+}
+
+.selection button {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  background-color: var(--basic-green);
 }
 
 @media (max-width: $desktop-width - 1px) {
@@ -34,6 +89,21 @@
     max-width: initial;
     margin: 0 auto;
   }
+
+  .selection form {
+    width: 100%;
+    background-color: var(--basic-white);
+    padding-top: 69px;
+    padding-left: 220px;
+    padding-right: 220px;
+    margin: 0 auto;
+  }
+
+  .selection__info {
+    font-size: 18px;
+    color: var(--basic-black);
+    margin: 0 0 29px 0;
+  }
 }
 
 @media (max-width: $tablet-width - 1px) {
@@ -41,5 +111,16 @@
     background-size: auto 390px;
     background-position: center top;
     padding-top: 122px;
+  }
+
+  .selection form {
+    width: initial;
+    padding-top: 71px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .selection__info {
+    margin-bottom: 20px;
   }
 }
