@@ -1,6 +1,6 @@
 'use strict';
 
-var mainNavJs = function () {
+var getNavJs = function () {
   var mainHeader = document.querySelector('.main-header');
   var mainNav = mainHeader.querySelector('.main-nav');
   var navToggle = mainNav.querySelector('.main-nav__toggle');
@@ -35,5 +35,5 @@ var getSmoothLinks = function () {
   });
 };
 
-mainNavJs();
+getNavJs();
 getSmoothLinks();

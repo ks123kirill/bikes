@@ -128,7 +128,7 @@
 
       &::before,
       &::after {
-       display: none;
+        display: none;
       }
     }
 
@@ -175,7 +175,6 @@
   }
 
   .catalog li {
-
     &:first-child::before {
       left: -25px;
     }
