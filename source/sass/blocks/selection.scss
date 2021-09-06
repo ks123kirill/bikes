@@ -6,6 +6,7 @@
   background-position: center;
   background-color: var(--basic-black);
   padding-top: 260px;
+  padding-bottom: 100px;
 }
 
 .selection > div {
@@ -51,7 +52,6 @@
   border-radius: 6px;
   border: 1px solid var(--special-grey-lighten);
   cursor: pointer;
-  padding-top: 6px;
   padding-left: 27px;
 
   &:hover::placeholder,
@@ -79,9 +79,10 @@
 @media (max-width: $desktop-width - 1px) {
   .selection {
     min-height: initial;
-    background-size: auto 426px;
-    background-position: top -41px center;
+    background-size: 100%;
+    background-position: top -45px center;
     padding-top: 139px;
+    padding-bottom: 0;
   }
 
   .selection > div {
@@ -108,8 +109,8 @@
 
 @media (max-width: $tablet-width - 1px) {
   .selection {
-    background-size: auto 390px;
-    background-position: center top;
+    background-image: url("../img/promo-bike-mobile.jpg");
+    background-position: top -2px center;
     padding-top: 122px;
   }
 
@@ -122,5 +123,16 @@
 
   .selection__info {
     margin-bottom: 20px;
+  }
+
+  .selection label,
+  .selection button {
+    margin-bottom: 19px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .selection {
+      background-image: url("../img/promo-bike-mobile@2x.jpg");
+    }
   }
 }

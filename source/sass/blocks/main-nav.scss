@@ -10,14 +10,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .main-nav li {
-  margin-right: 20px;
+  margin-right: 134px;
 }
 
 .main-nav li:last-child {
@@ -111,6 +110,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     background-color: var(--basic-white);
+    border-bottom: 1px solid var(--special-grey-light);
     margin: 0 0 0 auto;
   }
 
