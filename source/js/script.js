@@ -1,7 +1,8 @@
 'use strict';
 
 var getNavJs = function () {
-  var mainHeader = document.querySelector('.main-header');
+  var pageBody = document.querySelector('.page-body');
+  var mainHeader = pageBody.querySelector('.main-header');
   var mainNav = mainHeader.querySelector('.main-nav');
   var navToggle = mainNav.querySelector('.main-nav__toggle');
 
@@ -16,6 +17,7 @@ var getNavJs = function () {
       mainNav.classList.add('main-nav--close');
       mainNav.classList.remove('main-nav--open');
     }
+    pageBody.classList.toggle('page-body--no-scroll');
   });
 };
 

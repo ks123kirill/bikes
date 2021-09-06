@@ -49,7 +49,7 @@
   .main-nav__toggle {
     display: block;
     position: absolute;
-    z-index: 20;
+    z-index: 900;
     top: 0;
     right: 0;
     width: 50px;
@@ -64,7 +64,7 @@
     &::before {
       content: "";
       position: absolute;
-      z-index: 20;
+      z-index: 901;
       top: 18px;
       right: 14px;
       width: 22px;
@@ -83,7 +83,7 @@
     &::before,
     &::after {
       position: absolute;
-      z-index: 20;
+      z-index: 901;
       content: "";
       top: 26px;
       right: 9px;
@@ -103,7 +103,6 @@
 
   .main-nav ul {
     width: 100%;
-    min-height: 568px;
     padding-top: 101px;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -150,8 +149,9 @@
   }
 
   .main-nav--close ul {
-    position: absolute;
-    z-index: 10;
+    position: fixed;
+    z-index: 899;
+    height: 100vh;
     top: 0;
     right: 0;
   }

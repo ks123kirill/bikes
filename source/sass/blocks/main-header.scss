@@ -44,7 +44,7 @@
   }
 
   .main-header__wrapper .main-header__logo {
-    position: initial;
+    position: static;
     align-self: flex-end;
   }
 
@@ -60,6 +60,11 @@
 
   .main-header--no-js * button {
     display: none;
+  }
+
+  .main-header--no-js ul {
+    position: absolute;
+    min-height: 568px;
   }
 }
 
