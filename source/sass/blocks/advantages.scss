@@ -1,6 +1,6 @@
 .advantages {
   max-width: 1185px;
-  padding: 150px 30px 118px 30px;
+  padding: 150px 30px 148px 30px;
   margin: 0 auto;
 }
 
@@ -11,21 +11,12 @@
 }
 
 .advantages ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 24px;
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.advantages li {
-  flex-basis: 263px;
-  margin-bottom: 30px;
-}
-
-.advantages li:not(:nth-child(4n)) {
-  margin-right: 24px;
 }
 
 .advantages h3 {
@@ -41,25 +32,19 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 34px;
+  letter-spacing: -0.5px;
   margin: 0;
 }
 
 @media (max-width: $desktop-width - 1px) {
   .advantages {
     max-width: 549px;
-    padding: 51px 0 30px 0;
+    padding: 51px 0 70px 0;
   }
 
-  .advantages li {
-    margin-bottom: 38px;
-
-    &:not(:nth-child(4n)) {
-      margin-right: initial;
-    }
-
-    &:not(:nth-child(2n)) {
-      margin-right: 23px;
-    }
+  .advantages ul {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 37px 33px;
   }
 
   .advantages h2 {
@@ -70,16 +55,12 @@
 
 @media (max-width: $tablet-width - 1px) {
   .advantages {
-    padding: 50px 14px 25px 14px;
+    padding: 53px 14px 80px 14px;
   }
 
-  .advantages li {
-    flex-basis: 272px;
-    margin-bottom: 38px;
-
-    &:not(:nth-child(2n)) {
-      margin-right: initial;
-    }
+  .advantages ul {
+    grid-template-columns: 1fr;
+    grid-gap: 33px;
   }
 
   .advantages p {
