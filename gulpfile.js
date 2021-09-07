@@ -116,4 +116,4 @@ gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "webp", "html")
 gulp.task("start", gulp.series("build", "server"));
 
 // gh-pages
-ghpages.publish('build', function(err) {});
+ghpages.publish('build', function () {});

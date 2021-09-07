@@ -22,7 +22,8 @@
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.x",
     "eslint": "4.16.0",
-    "eslint-config-htmlacademy": "0.4.x"
+    "eslint-config-htmlacademy": "0.4.x",
+    "gh-pages": "^3.2.3"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
