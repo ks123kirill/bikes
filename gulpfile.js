@@ -15,6 +15,7 @@ var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var ghpages = require('gh-pages');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -113,3 +114,6 @@ gulp.task("clean", function () {
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "webp", "html"));
 gulp.task("start", gulp.series("build", "server"));
+
+// gh-pages
+ghpages.publish('build', function(err) {});
